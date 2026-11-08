@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAKI CAR SERVICE | Precision. Performance. Perfection.</title>
+    
+    <!-- Google Fonts: Space Grotesk & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlack: '#080808',
+                        brandGraphite: '#1C1C1C',
+                        brandMidGrey: '#292929',
+                        brandSilver: '#EAEAEA',
+                        brandMuted: '#8E8E8E',
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        ultra: '0.25em',
+                        mega: '0.4em'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #080808;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.4) 50%, rgba(8,8,8,1) 100%);
+        }
+
+        .cta-overlay {
+            background: linear-gradient(90deg, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.8) 50%, rgba(8,8,8,0.4) 100%);
+        }
+
+        .luxury-card {
+            background: #1C1C1C;
+            border: 1px solid #292929;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .luxury-card:hover {
+            border-color: #FFFFFF;
+            transform: translateY(-4px);
+        }
+
+        .navbar-glass {
+            background: rgba(8, 8, 8, 0.88);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080808;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #292929;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #EAEAEA;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #FFFFFF;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .grid-line-pattern {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white selection:text-black grid-line-pattern">
+
+    <!-- STICKY NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 navbar-glass transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-white text-black flex items-center justify-center font-extrabold text-xl heading-font tracking-tighter">
+                    Z
+                </div>
+                <div class="flex flex-col">
+                    <span class="heading-font text-lg md:text-xl font-extrabold tracking-wider text-white uppercase group-hover:text-brandSilver transition-colors">
+                        ZAKI <span class="font-light text-brandMuted">CAR SERVICE</span>
+                    </span>
+                    <span class="text-[9px] tracking-mega text-brandMuted uppercase hidden sm:block">Automotive Engineering</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <div class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-wider uppercase">
+                <a href="#home" class="nav-link text-white transition-colors">Home</a>
+                <a href="#about" class="nav-link text-brandMuted hover:text-white transition-colors">About Us</a>
+                <a href="#services" class="nav-link text-brandMuted hover:text-white transition-colors">Our Services</a>
+                <a href="#why-us" class="nav-link text-brandMuted hover:text-white transition-colors">Why Choose Us</a>
+                <a href="#gallery" class="nav-link text-brandMuted hover:text-white transition-colors">Gallery</a>
+                <a href="#contact" class="nav-link text-brandMuted hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Action Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#booking" class="bg-white text-black text-xs uppercase tracking-widest font-bold px-6 py-3 border border-white hover:bg-transparent hover:text-white transition-all duration-300">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="lg:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brandBlack/95 border-b border-brandMidGrey px-6 pt-4 pb-8 space-y-4">
+            <a href="#home" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-white py-2 border-b border-brandMidGrey/30">Home</a>
+            <a href="#about" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-brandMuted hover:text-white py-2 border-b border-brandMidGrey/30">About Us</a>
+            <a href="#services" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-brandMuted hover:text-white py-2 border-b border-brandMidGrey/30">Our Services</a>
+            <a href="#why-us" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-brandMuted hover:text-white py-2 border-b border-brandMidGrey/30">Why Choose Us</a>
+            <a href="#gallery" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-brandMuted hover:text-white py-2 border-b border-brandMidGrey/30">Gallery</a>
+            <a href="#contact" class="mobile-nav-item block text-sm font-semibold tracking-wider uppercase text-brandMuted hover:text-white py-2 border-b border-brandMidGrey/30">Contact</a>
+            <a href="#booking" class="mobile-nav-item block text-center bg-white text-black text-xs uppercase tracking-widest font-bold py-3 mt-4">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Luxury Studio Supercar" 
+                 class="w-full h-full object-cover object-center scale-105 transition-transform duration-10000">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center text-white mt-12">
+            <!-- Tagline Badge -->
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 border border-white/20 bg-brandBlack/60 backdrop-blur-md mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                <span class="text-[11px] uppercase tracking-ultra font-semibold text-brandSilver">
+                    PRECISION. PERFORMANCE. PERFECTION.
+                </span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="heading-font text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-none mb-6">
+                EXCELLENCE IN <br class="hidden sm:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-brandSilver to-brandMuted">
+                    EVERY DRIVE.
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-brandMuted font-light tracking-wide mb-10 leading-relaxed">
+                Premium car and motorcycle care, professional maintenance, and reliable automotive services engineered for modern road dominance.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#services" class="w-full sm:w-auto bg-white text-black hover:bg-brandSilver text-xs uppercase tracking-widest font-bold px-8 py-4 border border-white transition-all duration-300 shadow-xl">
+                    Explore Our Services
+                </a>
+                <a href="#booking" class="w-full sm:w-auto bg-transparent hover:bg-white/10 text-white text-xs uppercase tracking-widest font-bold px-8 py-4 border border-white/40 backdrop-blur-sm transition-all duration-300">
+                    Book A Service
+                </a>
+            </div>
+
+            <!-- Floating Stats Ribbon -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-8 max-w-4xl mx-auto text-left">
+                <div>
+                    <span class="block text-[10px] uppercase text-brandMuted tracking-wider">Experience</span>
+                    <span class="heading-font text-lg font-bold text-white">15+ Years Mastery</span>
+                </div>
+                <div>
+                    <span class="block text-[10px] uppercase text-brandMuted tracking-wider">Satisfaction</span>
+                    <span class="heading-font text-lg font-bold text-white">99.8% Client Rating</span>
+                </div>
+                <div>
+                    <span class="block text-[10px] uppercase text-brandMuted tracking-wider">Vehicles Serviced</span>
+                    <span class="heading-font text-lg font-bold text-white">10,000+ Completed</span>
+                </div>
+                <div>
+                    <span class="block text-[10px] uppercase text-brandMuted tracking-wider">Engineering</span>
+                    <span class="heading-font text-lg font-bold text-white">Cars & Motorcycles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section id="about" class="py-24 bg-brandBlack border-b border-brandMidGrey">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Column -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="text-xs uppercase tracking-ultra font-bold text-brandMuted flex items-center gap-2">
+                        <span class="w-6 h-px bg-white"></span>
+                        About Zaki Car Service
+                    </div>
+
+                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white leading-tight">
+                        BUILT ON TRUST. <br />
+                        <span class="text-brandMuted font-light">DRIVEN BY PASSION.</span>
+                    </h2>
+
+                    <p class="text-brandMuted text-sm md:text-base leading-relaxed font-light">
+                        At <strong class="text-white font-semibold">ZAKI CAR SERVICE</strong>, we fuse German-grade technical discipline with unyielding automotive passion. Founded on the principle that precision engineering deserves immaculate maintenance, our studio delivers uncompromising vehicle care.
+                    </p>
+
+                    <p class="text-brandMuted text-sm md:text-base leading-relaxed font-light">
+                        From high-revving super-bikes to sophisticated executive luxury sedans, our master mechanics leverage factory OEM software, high-precision tools, and multi-point inspection routines to ensure every machine operates at peak performance.
+                    </p>
+
+                    <div class="p-6 border border-brandMidGrey bg-brandGraphite/50 relative">
+                        <p class="text-xs italic text-brandSilver font-light">
+                            "Your vehicle is not just transportation; it is an masterpiece of modern mechanical art. We treat it with the exact precision it was engineered with."
+                        </p>
+                        <span class="block text-[10px] uppercase tracking-widest text-brandMuted mt-3 font-semibold">— Chief Technical Engineer</span>
+                    </div>
+                </div>
+
+                <!-- Workshop Visual -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 border border-brandMidGrey p-2 bg-brandGraphite shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" 
+                             alt="Luxury Vehicle Workshop Inspection" 
+                             class="w-full h-[460px] object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border border-white/20 -z-0 hidden sm:block"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. OUR SERVICES SECTION (High Contrast Pure White Background) -->
+    <section id="services" class="py-24 bg-white text-brandBlack">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-neutral-200 pb-8">
+                <div>
+                    <span class="text-xs uppercase tracking-ultra font-bold text-neutral-500 block mb-2">Engineering Services</span>
+                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-black">
+                        OUR SERVICES
+                    </h2>
+                </div>
+
+                <!-- Dynamic Filter Buttons -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="service-filters">
+                    <button data-filter="all" class="filter-btn active bg-brandBlack text-white text-xs uppercase tracking-widest px-5 py-2.5 font-bold transition-all">
+                        All Services
+                    </button>
+                    <button data-filter="car" class="filter-btn bg-neutral-100 text-neutral-600 hover:bg-neutral-200 text-xs uppercase tracking-widest px-5 py-2.5 font-bold transition-all">
+                        Car Services
+                    </button>
+                    <button data-filter="motorcycle" class="filter-btn bg-neutral-100 text-neutral-600 hover:bg-neutral-200 text-xs uppercase tracking-widest px-5 py-2.5 font-bold transition-all">
+                        Motorcycle Services
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="services-grid">
+                
+                <!-- Card 1: Motorcycle Servicing -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="motorcycle">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Motorcycle Servicing" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Motorcycle
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Motorcycle Servicing</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Sportbike & cruiser tune-ups, drive chain adjustment, throttle body sync, and safety checks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Motorcycle Servicing', 'Comprehensive motorcycle tune-ups including drive chain tensioning, throttle sync, liquid cooling flush, valve clearance verification, and racing-grade brake line bleed.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Car Maintenance -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Car Maintenance" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Car
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Car Maintenance</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Scheduled factory inspections following OEM standards to preserve powertrain longevity and resale value.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Car Maintenance', 'Complete scheduled maintenance following OEM guidelines. Includes multi-system fluid refreshes, filter changes, spark plug testing, and factory diagnostic updates.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Engine Inspection -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Engine Inspection" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Car & Bike
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Engine Inspection</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Microscopic borescope cylinder inspection, compression testing, and mechanical valve adjustments.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Engine Inspection', 'Deep mechanical engine diagnostics utilizing borescope fiber-optics, cylinder compression tests, timing gear calibration, and leak-down evaluations.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Oil & Filter Change -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Oil & Filter Change" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Essential
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Oil & Filter Change</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Full synthetic racing lubricants tailored for high-output engines operating under demanding conditions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Oil & Filter Change', '100% Synthetic grade lubricant flush replacement coupled with micro-element filter media to guarantee maximum thermal viscosity protection under high RPM load.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5: Brake Inspection -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Brake Inspection" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Safety
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Brake Inspection</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Steel and carbon ceramic rotor surfacing, pad replacements, caliper service, and fluid flush.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Brake Inspection', 'Complete brake system service: digital rotor run-out measurement, ceramic pad installs, caliper piston rebuilds, and high-boiling point hydraulic fluid replacement.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6: Vehicle Diagnostics -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Vehicle Diagnostics" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Technology
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Vehicle Diagnostics</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Computerized dealership-level ECU diagnostic scanning, fault clearing, and live sensor telemetry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Vehicle Diagnostics', 'Full electronic module health scan, sensor parameter logging, error code resolution, and factory ECU software recalibration.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 7: Car Washing & Detailing -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="car">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Car Washing & Detailing" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Aesthetic
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">Car Washing & Detailing</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Multi-stage paint restoration, 9H nano ceramic body coatings, interior decontamination, and leather treatment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('Car Washing & Detailing', 'Concours detailing workflow: pH-neutral foam bath, clay bar decontamination, dual-action orbital paint correction, and multi-year ceramic clear-coat sealers.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 8: General Mechanical Repair -->
+                <div class="service-card group border border-neutral-200 bg-neutral-50 flex flex-col justify-between overflow-hidden" data-category="motorcycle">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" 
+                                 alt="General Mechanical Repair" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brandBlack text-white text-[10px] tracking-widest uppercase font-bold px-2.5 py-1">
+                                Repair
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="heading-font text-xl font-bold uppercase mb-3 text-brandBlack">General Mechanical Repair</h3>
+                            <p class="text-xs text-neutral-600 leading-relaxed font-normal">
+                                Complete powertrain overhauls, coilover suspension setups, transmission fluid service, and cooling refreshes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <button onclick="openServiceModal('General Mechanical Repair', 'Comprehensive mechanical overhaul: transmission rebuilt units, custom exhaust fabrication, suspension geometry alignment, and electrical system rewiring.')" 
+                                class="w-full bg-brandBlack text-white hover:bg-neutral-800 text-xs font-bold uppercase tracking-wider py-3 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US -->
+    <section id="why-us" class="py-24 bg-brandBlack border-t border-b border-brandMidGrey">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-ultra font-bold text-brandMuted block mb-3">The Zaki Guarantee</span>
+                <h2 class="heading-font text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white">
+                    WHY CHOOSE US
+                </h2>
+                <div class="w-12 h-0.5 bg-white mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-wrench text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Professional Workmanship</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        Factory-certified mechanics backed by years of experience with European, Asian, and American luxury performance engines.
+                    </p>
+                </div>
+
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Quality Service</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        100% genuine replacement parts, racing synthetic lubricants, and calibrated tools meeting manufacturer tolerances.
+                    </p>
+                </div>
+
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-face-smile text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Customer Satisfaction</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        Executive lounge amenities, transparent digital job sheets, and dedicated client service managers.
+                    </p>
+                </div>
+
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Attention To Detail</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        Microscopic inspection methods, torque-verified bolts, white-glove cabin protection, and pristine hand washing.
+                    </p>
+                </div>
+
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-car-side text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Reliable Vehicle Care</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        Structured maintenance programs designed to prevent unexpected breakdowns and preserve machine residual value.
+                    </p>
+                </div>
+
+                <div class="luxury-card p-8 group">
+                    <div class="w-14 h-14 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white mb-6 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold uppercase text-white mb-3">Transparent Communication</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed font-light">
+                        No hidden costs or unauthorized labor. Full upfront estimates with photo/video proof during diagnostic reviews.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. AUTOMOTIVE GALLERY -->
+    <section id="gallery" class="py-24 bg-brandBlack">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs uppercase tracking-ultra font-bold text-brandMuted block mb-2">Visual Showcase</span>
+                    <h2 class="heading-font text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white">
+                        AUTOMOTIVE GALLERY
+                    </h2>
+                </div>
+
+                <!-- Gallery Category Tabs -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="gallery-filters">
+                    <button data-gallery="all" class="g-filter-btn active bg-white text-black text-xs uppercase tracking-widest px-4 py-2 font-bold transition-all">All</button>
+                    <button data-gallery="cars" class="g-filter-btn bg-brandGraphite text-brandMuted hover:text-white text-xs uppercase tracking-widest px-4 py-2 font-bold transition-all">Supercars</button>
+                    <button data-gallery="bikes" class="g-filter-btn bg-brandGraphite text-brandMuted hover:text-white text-xs uppercase tracking-widest px-4 py-2 font-bold transition-all">Motorcycles</button>
+                    <button data-gallery="workshop" class="g-filter-btn bg-brandGraphite text-brandMuted hover:text-white text-xs uppercase tracking-widest px-4 py-2 font-bold transition-all">Workshop</button>
+                </div>
+            </div>
+
+            <!-- Gallery Photos Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="cars" onclick="openLightbox('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=90', 'Porsche Performance Inspection')">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Porsche Performance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Supercar Service</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">Porsche Performance Inspection</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="bikes" onclick="openLightbox('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=90', 'Custom Ducati Maintenance')">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Ducati Motorcycle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Motorcycle</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">Custom Ducati Tuning</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="workshop" onclick="openLightbox('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=90', 'Precision Studio Bay')">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Workshop Bay" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Workshop</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">Precision Studio Bay</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="cars" onclick="openLightbox('https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1600&q=90', 'BMW M Series Diagnostics')">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="BMW Diagnostics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Diagnostics</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">BMW M Series Scanning</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="cars" onclick="openLightbox('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1600&q=90', 'Ceramic Polish Detailing')">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" alt="Car Polish Detailing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Detailing</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">Ceramic Polish Detailing</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item group relative h-72 overflow-hidden border border-brandMidGrey cursor-pointer" data-category="bikes" onclick="openLightbox('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=90', 'Superbike Exhaust Tuning')">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" alt="Superbike Repair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-brandBlack/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Motorcycle</span>
+                            <h4 class="heading-font text-lg font-bold text-white uppercase">Superbike Exhaust Tuning</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CALL TO ACTION BANNER -->
+    <section class="relative py-28 overflow-hidden bg-brandBlack">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=2000&q=85" 
+                 alt="Luxury Vehicle Lighting" 
+                 class="w-full h-full object-cover object-center filter brightness-50">
+            <div class="absolute inset-0 cta-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="max-w-2xl text-center md:text-left">
+                <span class="text-xs uppercase tracking-ultra font-bold text-brandSilver block mb-3">Elevate Your Driving Experience</span>
+                <h2 class="heading-font text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white mb-4">
+                    READY FOR A BETTER DRIVE?
+                </h2>
+                <p class="text-brandMuted text-sm sm:text-base font-light">
+                    Give your vehicle the professional care it deserves. Schedule your comprehensive diagnostic or maintenance service appointment today.
+                </p>
+            </div>
+
+            <div>
+                <a href="#booking" class="inline-block bg-white text-black hover:bg-brandSilver text-xs uppercase tracking-widest font-bold px-10 py-5 border border-white transition-all duration-300 shadow-2xl">
+                    Book Your Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT & APPOINTMENT BOOKING -->
+    <section id="contact" class="py-24 bg-brandGraphite border-t border-brandMidGrey">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Booking Form -->
+                <div id="booking" class="lg:col-span-7 bg-brandBlack border border-brandMidGrey p-8 md:p-12">
+                    <span class="text-xs uppercase tracking-ultra font-bold text-brandMuted block mb-2">Reservation System</span>
+                    <h3 class="heading-font text-2xl sm:text-4xl font-extrabold uppercase text-white mb-8">
+                        BOOK AN APPOINTMENT
+                    </h3>
+
+                    <form id="appointmentForm" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Full Name *</label>
+                                <input type="text" required placeholder="e.g. Alexander Vance" class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Phone Number *</label>
+                                <input type="tel" required placeholder="+1 (800) 925-4227" class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Vehicle Type *</label>
+                                <select required class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                                    <option value="" disabled selected>Select Vehicle Type</option>
+                                    <option value="luxury-car">Luxury Sedan / Coupe</option>
+                                    <option value="suv">SUV / Crossover</option>
+                                    <option value="supercar">Supercar / Performance Car</option>
+                                    <option value="motorcycle">Superbike / Motorcycle</option>
+                                    <option value="both">Multiple Vehicles</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Service Required *</label>
+                                <select required class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                                    <option value="" disabled selected>Select Desired Service</option>
+                                    <option value="motorcycle-service">Motorcycle Servicing</option>
+                                    <option value="car-maintenance">Car Maintenance</option>
+                                    <option value="engine-inspection">Engine Inspection</option>
+                                    <option value="oil-change">Oil & Filter Change</option>
+                                    <option value="brake-inspection">Brake Inspection</option>
+                                    <option value="diagnostics">Vehicle Diagnostics</option>
+                                    <option value="washing-detailing">Car Washing & Detailing</option>
+                                    <option value="general-repair">General Mechanical Repair</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Preferred Date *</label>
+                                <input type="date" required class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Time Window *</label>
+                                <select required class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors">
+                                    <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+                                    <option value="evening">Evening (04:00 PM - 08:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2 font-medium">Vehicle Notes & Special Requests</label>
+                            <textarea rows="3" placeholder="Specify vehicle make, model, year, or specific concerns..." class="w-full bg-brandGraphite border border-brandMidGrey text-white px-4 py-3 text-sm focus:outline-none focus:border-white transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-white text-black hover:bg-brandSilver text-xs font-bold uppercase tracking-widest py-4 border border-white transition-all duration-300">
+                            Confirm Appointment Request
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+                    
+                    <div class="bg-brandBlack border border-brandMidGrey p-8 space-y-6">
+                        <h4 class="heading-font text-xl font-bold uppercase text-white pb-4 border-b border-brandMidGrey">
+                            Contact Information
+                        </h4>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white shrink-0">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Phone Hotline</span>
+                                <a href="tel:+18009254227" class="text-sm font-semibold text-white hover:text-brandSilver">+1 (800) 925-4227</a>
+                                <p class="text-xs text-brandMuted mt-0.5">Concierge Desk Available 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white shrink-0">
+                                <i class="fa-solid fa-location-dot text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Workshop Location</span>
+                                <p class="text-sm font-semibold text-white">742 Automotive Blvd, Luxury Quarter</p>
+                                <p class="text-xs text-brandMuted">High Performance Industrial Zone</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-white shrink-0">
+                                <i class="fa-solid fa-clock text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase tracking-widest text-brandMuted block">Operating Hours</span>
+                                <p class="text-sm font-semibold text-white">Mon - Sat: 08:00 AM - 08:00 PM</p>
+                                <p class="text-xs text-brandMuted">Sunday: Trackside Support & Emergency Only</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-brandMidGrey">
+                            <a href="https://wa.me/18009254227" target="_blank" rel="noopener noreferrer" class="w-full bg-[#25D366] text-black font-bold text-xs uppercase tracking-widest py-3 px-4 flex items-center justify-center gap-2 hover:bg-[#20ba5a] transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Chat
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="h-64 border border-brandMidGrey overflow-hidden relative">
+                        <iframe 
+                            title="Zaki Car Service Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.308892482705!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQxJzAzLjggTiA3M8KwMDInNTIuNCJF!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-brandBlack text-white border-t border-brandMidGrey pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-brandMidGrey">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-white text-black flex items-center justify-center font-bold text-lg heading-font">
+                            Z
+                        </div>
+                        <span class="heading-font text-lg font-extrabold tracking-wider uppercase text-white">
+                            ZAKI <span class="font-light text-brandMuted">CAR SERVICE</span>
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-brandMuted leading-relaxed max-w-sm">
+                        Setting international benchmark standards in luxury automotive & superbike care. Built on mechanical mastery and transparent client relations.
+                    </p>
+
+                    <div class="text-xs font-semibold tracking-widest uppercase text-white pt-2">
+                        "PRECISION. PERFORMANCE. PERFECTION."
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="heading-font text-xs font-bold uppercase tracking-widest text-white mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-xs text-brandMuted">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#booking" class="hover:text-white transition-colors">Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="heading-font text-xs font-bold uppercase tracking-widest text-white mb-4">Services</h5>
+                    <ul class="space-y-2 text-xs text-brandMuted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Motorcycle Servicing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Car Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Engine Diagnostics</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Oil & Filter Change</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Ceramic Detailing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="heading-font text-xs font-bold uppercase tracking-widest text-white mb-4">Connect</h5>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <a href="#" aria-label="Facebook" class="w-9 h-9 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-brandMuted hover:text-white hover:border-white transition-all">
+                            <i class="fa-brands fa-facebook-f text-xs"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-9 h-9 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-brandMuted hover:text-white hover:border-white transition-all">
+                            <i class="fa-brands fa-instagram text-xs"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="w-9 h-9 bg-brandGraphite border border-brandMidGrey flex items-center justify-center text-brandMuted hover:text-white hover:border-white transition-all">
+                            <i class="fa-brands fa-youtube text-xs"></i>
+                        </a>
+                    </div>
+                    <span class="text-[10px] text-brandMuted block uppercase tracking-wider">Direct Hotline</span>
+                    <span class="text-xs font-bold text-white block">+1 (800) 925-4227</span>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-brandMuted">
+                <p>&copy; 2026 ZAKI CAR SERVICE. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Cookie Settings</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SERVICE DETAIL MODAL -->
+    <div id="serviceModal" class="fixed inset-0 z-50 hidden bg-brandBlack/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-brandBlack border border-brandMidGrey max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeServiceModal()" class="absolute top-4 right-4 text-brandMuted hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <span class="text-[10px] uppercase tracking-ultra text-brandMuted block mb-1">Service Detail</span>
+            <h3 id="modalTitle" class="heading-font text-2xl font-bold uppercase text-white mb-4"></h3>
+            <p id="modalDescription" class="text-xs text-brandMuted leading-relaxed mb-6 font-light"></p>
+            <a href="#booking" onclick="closeServiceModal()" class="block text-center bg-white text-black font-bold text-xs uppercase tracking-widest py-3">
+                Book This Service
+            </a>
+        </div>
+    </div>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-brandBlack/95 backdrop-blur-lg flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl focus:outline-none hover:text-brandMuted">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center">
+            <img id="lightboxImg" src="" alt="Expanded View" class="max-h-[80vh] mx-auto border border-brandMidGrey shadow-2xl">
+            <h4 id="lightboxCaption" class="heading-font text-lg font-bold text-white uppercase mt-4"></h4>
+        </div>
+    </div>
+
+    <!-- BOOKING SUCCESS TOAST MODAL -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden bg-brandBlack/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-brandBlack border border-white max-w-md w-full p-8 text-center space-y-4 shadow-2xl">
+            <div class="w-16 h-16 bg-white text-black mx-auto flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="heading-font text-2xl font-bold uppercase text-white">Booking Requested</h3>
+            <p class="text-xs text-brandMuted leading-relaxed">
+                Thank you for selecting ZAKI CAR SERVICE. Our executive service manager will review your appointment request and contact you shortly.
+            </p>
+            <button onclick="closeSuccessModal()" class="w-full bg-white text-black font-bold text-xs uppercase tracking-widest py-3">
+                Close Window
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CONTROLLERS -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileNavItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Services Filter Logic
+        const filterBtns = document.querySelectorAll('#service-filters .filter-btn');
+        const serviceCards = document.querySelectorAll('#services-grid .service-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brandBlack', 'text-white');
+                    b.classList.add('bg-neutral-100', 'text-neutral-600');
+                });
+                btn.classList.remove('bg-neutral-100', 'text-neutral-600');
+                btn.classList.add('bg-brandBlack', 'text-white');
+
+                const filter = btn.getAttribute('data-filter');
+
+                serviceCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Gallery Filter Logic
+        const galleryBtns = document.querySelectorAll('#gallery-filters .g-filter-btn');
+        const galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
+
+        galleryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                galleryBtns.forEach(b => {
+                    b.classList.remove('bg-white', 'text-black');
+                    b.classList.add('bg-brandGraphite', 'text-brandMuted');
+                });
+                btn.classList.remove('bg-brandGraphite', 'text-brandMuted');
+                btn.classList.add('bg-white', 'text-black');
+
+                const category = btn.getAttribute('data-gallery');
+
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Service Modal Handlers
+        function openServiceModal(title, description) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('serviceModal').classList.remove('hidden');
+        }
+
+        function closeServiceModal() {
+            document.getElementById('serviceModal').classList.add('hidden');
+        }
+
+        // Lightbox Handlers
+        function openLightbox(imgSrc, caption) {
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxCaption').innerText = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        // Appointment Form Submission Handler
+        const appointmentForm = document.getElementById('appointmentForm');
+        const successModal = document.getElementById('successModal');
+
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successModal.classList.remove('hidden');
+            appointmentForm.reset();
+        });
+
+        function closeSuccessModal() {
+            successModal.classList.add('hidden');
+        }
+
+        // Header scroll padding effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-5');
+            } else {
+                navbar.classList.add('py-5');
+                navbar.classList.remove('py-3');
+            }
+        });
+    </script>
+</body>
+</html>
